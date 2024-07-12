@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        } */
+        .one{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="coca cola.jpg" alt=""> <br>
+         <img src="thumsup.jpg" alt="" class="one">
+    <button onclick="increment()">+</button>
+    <h1 id="one"></h1>
+    <button onclick="decrement()">-</button>
+    <h2 id="two"></h2>
+</div>
+</body>
+<script>
+    let val = 0;
+    document.getElementById("one").textContent = val;
+    function increment() {
+        val = val + 1;
+        document.getElementById("one").innerText = val;
+        document.getElementById("two").innerText = val*40;
+    }
+    function decrement() {
+        if (val > 0) {
+            val = val - 1;  
+        document.getElementById("one").innerText = val;
+        document.getElementById("two").innerText = val*40;
+    }
+    }
+
+    
+</script>
+</html>

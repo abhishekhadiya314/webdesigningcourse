@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //  # PRIMITIVE DATA TYPES  
+
+//  7 TYPES  : STRING, NUMBER ,BOOLEAN, NULL ,UNDEFINED, SYMBOL,BIGINT
+
+ const score = 100
+ const scoreValue = 100.3
+//   console.log(scoreValue);
+
+ const isLoggedIn = false
+ const outsideTemp = null
+ let userEmail ;
+//  console.log(isLoggedIn);
+
+ const id = Symbol('123')
+ const anotherId = Symbol('123')
+//  console.log(id === anotherId);
+
+ const bigNumber = 331531534151n
+
+//  console.log(bigNumber);
+
+//  #REFFERENCE TYPE(NON-PRIMITIVE DATA TYPE) 
+
+//  Array(""), Object{}, Functions 
+
+ const heros = ["shaktiman", "nagraj", "doga"];
+
+ let myobj = {
+    name: "abhishek",
+    age: 22,
+
+}
+
+// function 
+
+const mymenufunction = function () {
+    console.log("hello world");
+}
+
+// data type identification
+
+// console.log(typeof(bigNumber));
+// console.log(typeof(mymenufunction));
+// console.log(typeof(scoreValue));
+
+                         // memory
+                        //  (1) = stackmemory (primitive)
+                            // (2) = heapmemory (non-primitive)
+
+let myyoutubename = "abc.com"
+let anothername = myyoutubename
+anothername = "def12"
+
+// console.log(myyoutubename);
+// console.log(anothername);
+
+let userone = {
+    email: "user@google.com",
+    upi: "user@ybl"
+
+}
+let usertwo = userone
+
+usertwo.email = "abhi@google.com"
+
+// console.log(userone.email);
+// console.log(usertwo.email);
+
+</script>
+</html>

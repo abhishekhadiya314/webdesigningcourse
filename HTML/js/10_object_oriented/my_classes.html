@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //  class User {
+    //     constructor(username, email, password) {
+    //         this.username = username;
+    //         this.email = email;
+    //         this.password = password
+    //     }
+    //     encryptPassword(){
+    //         return `${this.password}abc`
+    //     }
+    //     changeUsername(){
+    //         return `${this.username.toUpperCase()}`
+    //     }
+    //  }
+    //  const def = new User("def", "def@email.com" ,"123")
+     
+    //  console.log(def.encryptPassword());
+    //  console.log(def.changeUsername());
+ 
+
+          // behind the scene 
+
+     function  User(username, email, password) {
+        this.username = username;
+        this.email = email;
+        this.password = password; 
+     }
+     User.prototype.encryptPassword = function () {
+        return `${this.password}abc`
+        
+     }
+     User.prototype.changeUsername = function () {
+        return `${this.username.toUpperCase()}`
+        
+     }
+     const xyz = new User("xyz", "xyz@gmail.com", "123")
+     console.log(xyz.encryptPassword());
+     console.log(xyz.changeUsername());
+     
+</script>
+</html>

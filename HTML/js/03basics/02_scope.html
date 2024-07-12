@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = 300   
+    let b = 100              // globel scope 
+    if (true) {
+        let a = 10                  // block scope 
+        const b = 20
+        console.log("INNER: ", b);
+
+    }
+    console.log(a);
+    console.log(b);
+
+    function one() {
+        const username = "abhishek"
+
+        function two() {
+            const website = "youtube"
+            console.log(username);
+            
+        }
+        // console.log(website);
+
+        two()                     // error message
+
+    }
+    // one()                     // error message 
+
+
+    if (true) {
+        const username = "abhishek"
+        if (username === "abhishek") {
+            const website = "youtube"
+            // console.log(username + website);  
+        }
+    }
+    
+
+    //++++++++++++++++++++++++++++++++interesting +++++++++++++++++++++++
+                // two types function //
+
+    //  console.log(  addone(4));  
+    function addone(num) {
+        return num + 1
+        
+    }
+
+    
+    // addTwo(5)                           // not working
+    const addTwo = function (num) {
+        return num + 2
+    }
+    // console.log(addTwo(5));  
+</script>
+</html>

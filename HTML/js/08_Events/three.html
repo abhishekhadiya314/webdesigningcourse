@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mark">learn JavaScript</h1>
+    <button id="start" >start</button>
+    <button id="stop" >stop</button>
+</body>
+<script>
+
+    const sayDate = function () {
+    console.log("abhi", Date.now());
+   }
+//  const intervalid = setInterval(sayDate, 1000, )
+//    clearInterval(intervalid)
+
+ let intervalid;
+ function startProcess () {
+    document.getElementById('start').disabled = true;
+    document.getElementById('stop').disabled = false;
+    
+    let sayDate = 0;
+    intervalid = setInterval(function () {
+        console.log('Abhi', Date.now());
+        // sayDate;
+        
+    },1000)
+}
+
+function stopProcess () {
+    document.getElementById('start').disabled = false;
+    document.getElementById('stop').disabled = true;
+      
+    clearInterval(intervalid);
+    console.log('process stopped');
+}
+document.getElementById('start').addEventListener('click', startProcess);
+document.getElementById('stop').addEventListener('click', stopProcess);
+
+</script>
+</html>

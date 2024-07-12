@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <p id="one">Lorem ipsum dolor sit amet <b>consectetur adipisicing elit.</b> Doloremque praesentium architecto voluptate ullam labore quod odio eos error est porro?</p>
+    <button id="abc">get text</button>
+    <button id="abc1">get html</button>
+    <button id="abc2">hide</button>
+    <input type="text" name="" id="xyz" value="abhishek">
+    <button id="abc3">show-value</button>
+    <a href="https://www.google.com/" id="google">click here</a>
+    <button id="abc4">click google</button>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("#abc").click(function () {
+            
+                $("#one").text("hello")
+            
+            
+        })
+        $("#abc1").click(function () {
+            
+                $("#one").html("<h1>abhishek</h1>")
+            
+            
+        })
+        $("#abc2").click(function () {
+    
+                $("#one").toggle()
+            
+            
+        })
+        $("#abc3").click(function () {
+        
+    $("#xyz").val("hadiya")
+    
+
+})
+$("#abc4").click(function () {
+            
+    $("#google").attr("href","https://www.volkswagen.co.in/en.html")
+    
+
+})
+ 
+    })
+</script>
+</html>

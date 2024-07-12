@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login $ registration form with javascript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>LOGO</p>
+        </div>
+        <div class="nav-menu" id="navmenu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginbtn" onclick="login()">sign in</button>
+            <button class="btn" id="registerbtn" onclick="login()">sign up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="mymenufunction()"></i>
+        </div>
+    </nav>
+
+                                    <!-- FORM BOX -->
+    <div class="form-box">
+
+                           <!-- login form -->
+
+        <div class="login-container" id="login">
+            <div class="top">
+                <span> Don't Have an account? <a href="#" onclick="register()">sign up</a></span>
+                <header>Login</header>
+            </div>
+            
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder=" username or Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="sign in">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label ><a href="#">Forgot password?</a></label>
+                    </div>
+                
+            </div>
+        </div>  
+        
+                                    <!-- registration form -->
+<div class="register-container" id="register">
+    <div class="top">
+        <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+        <header>sign up</header>
+    </div>
+    <div class="two-forms">
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Firstname">
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="lastname">
+            <i class="bx bx-user"></i>
+        </div>
+    </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Email">
+            <i class="bx bx-envelope"></i>
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Password">
+            <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="input-box">
+            <input type="submit" class="submit" value="register">
+        </div>
+        <div class="two-col">
+            <div class="one">
+                <input type="checkbox" id="register-check">
+                <label for="register-check">Remember Me</label>
+            </div>
+            <div class="two">
+                <label ><a href="#">Terms & condition</a></label>
+            </div>
+        
+    </div>
+</div>
+    </div>
+</div>
+<script>
+
+    function mymenufunction() {
+        var i = document.getElementById("navmenu")
+
+        if(i.className=== "nav-menu") {
+            i.className += " reponsive";
+        }else {
+            i.className = "nav-menu";
+        }
+    }
+
+</script>
+
+<script>
+    var a = document.getElementById("loginbtn")
+    var b = document.getElementById("registerbtn")
+    var x = document.getElementById("login")
+    var y = document.getElementById("register")
+
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+</script>
+</body>
+</html> 

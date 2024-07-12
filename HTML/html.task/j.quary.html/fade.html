@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .one{
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            display: none;
+        }
+        .two{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            display: none;
+        }
+        .three{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <button id="abc">fadein</button>
+    <button id="abc1">fadeout</button>
+    <button id="abc2">fadetoggle</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#abc").click(function() {
+            $(".one").fadeIn()
+            $(".two").fadeIn("slow")
+            $(".three").fadeIn(4000)
+            
+        })
+        $(document).ready(function () {
+            $("#abc1").click(function () {
+                $(".one").fadeOut(2000)
+                $(".two").fadeOut(3000)
+                $(".three").fadeOut(4000)
+                
+            })
+            
+        })
+        $(document).ready(function () {
+            $("#abc2").click(function () {
+                $(".one").fadeToggle(2000)
+                $(".two").fadeToggle(3000)
+                $(".three").fadeToggle(4000)
+                
+            })
+            
+        })
+    })
+</script>
+</html>

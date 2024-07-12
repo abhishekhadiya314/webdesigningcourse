@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins";
+    text-transform: capitalize;
+}
+.navbar{
+    height: auto;
+    width: auto;
+    background-color: #daac00;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+    display: inline-block;    
+    display: flex;
+    margin-left: 40px;
+    gap: 40px;
+    flex-direction: row;
+    font-size: 20px;
+    position: relative;
+    font-family: "Poppins";
+    
+}
+li a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.search {
+    height: 50px;
+    display: flex;
+    border: 3px solid transparent;
+}
+.search input{
+    height: 60px;
+    width: 300px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: start;
+    cursor: pointer;
+    justify-content: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.search-icon  {
+    width: 60px;
+    height: 60px;
+    background-color: #00bec9;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-position-x: center;
+    background-position-y:center ;
+    background-repeat: no-repeat;
+    margin-left: -60px;
+}
+.border:hover{
+    border: 1.5px solid #ffffff;
+}

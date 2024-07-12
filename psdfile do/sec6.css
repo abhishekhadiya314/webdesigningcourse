@@ -1,0 +1,59 @@
+.section-six{
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    padding: 90px;
+}
+.section-six >h1{
+    font-size: 75px;
+color: #313243;
+font-weight: 700;
+font-family: "Poppins";
+text-align: center;
+text-transform: initial;
+}
+.section-six >p{
+    font-size: 33px;
+color: #313243;
+font-weight: 400;
+font-family: "Poppins";
+text-align: center;
+margin-top: 20px;
+text-transform: initial;
+}
+.section-six-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    margin-top:50px ;
+    margin-left: -20px;
+
+}
+.six-image > h4{
+    font-size: 29px;
+color: #313243;
+font-weight: 700;
+font-family: "Poppins";
+text-align: center;
+margin-top: 30px;
+}
+.six-image > p{
+    font-size: 25px;
+color: #313243;
+font-weight: 400;
+font-family: "Poppins";
+text-align: center;
+margin-top: 30px;
+}
+.six-image > span {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 315.5px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    font-size: 29px;
+    column-gap: 20px;
+
+}

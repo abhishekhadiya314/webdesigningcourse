@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="type" id="one">
+    <button onclick="abc()">ans</button>
+    <span id="five"></span>
+</body>
+<script>
+    function abc() {
+            var a = document.getElementById("one").value
+            switch (a) {
+                case "123":
+                document.getElementById("five").innerHTML = "visa"
+                break   ;
+
+                case "456":
+                document.getElementById("five").innerHTML = "rupay"
+                break   ;
+                case "789":
+                document.getElementById("five").innerHTML = "millenia"
+                break   ;
+                case "987":
+                document.getElementById("five").innerHTML = "master card"
+                break;
+                
+            }
+     }
+    //  function abc() {
+
+    //          document.getElementById("five").innerHTML = "master"
+    //  }
+     
+</script>
+</html>

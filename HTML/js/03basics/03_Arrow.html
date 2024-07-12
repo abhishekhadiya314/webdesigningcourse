@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const User = {
+        username: "abhishek",
+        price: 199,
+
+        welcomeMessage: function () {
+            console.log(`${this.username}, welcome to website`);
+            console.log(this);
+        }
+        
+    }
+    // User.welcomeMessage()
+    // User.username = "abhi"
+    // User.welcomeMessage()
+
+    // console.log(this);                 // error= window objects
+
+
+    //+++++not working +++++++//
+
+    // function one() {
+    //     let username = "abhishek"
+    //     console.log(this.username);
+        
+    // }
+    // one()
+
+        // const one =  () => {
+        //     let  username = "abhishek"
+        //     console.log(this);
+            
+        // }
+        // one()
+
+        //  ++++++++++++ Arrow function ++++++++++//
+
+        //+++++++ basic arrow function +++++++++//
+
+        const addTwo = (num1, num2) => {
+            return num1 + num2
+        }
+        // console.log(addTwo(3, 4)); 
+    
+      
+        // const addthree = (num1, num2) => num1 + num2                   // type 1
+        // const addthree = (num1, num2) => (num1 + num2)                      // type 2
+        const addthree = (num1, num2) => ({username: "abhi"})                     // type 2
+
+        // console.log(addthree(4, 7));
+        
+</script>
+</html>

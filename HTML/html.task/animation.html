@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            perspective: 200px;
+        }
+        .main{
+            margin-left: 100px;
+            margin-top: 50px;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation-name: abc;
+            animation-duration: 10s;
+        /* animation-iteration-count: 2; */
+        /* animation-direction: normal; */
+        }
+        @keyframes abc{
+            from {height: 500px;
+                width: 500px;
+                transform: rotate(-60deg);
+                background-color: red;}
+            to {background-color: blue;} 
+/* 
+            0% {
+                background-color: red;
+                transform: rotate(30deg);
+            }
+            25% {
+                background-color: yellow;
+                filter: blur(5px);
+                transform: rotate(40deg);
+            }
+            50% {
+                background-color: brown;
+                transform: rotate(50deg);
+            }
+            75% {
+                background-color: purple;
+                transform: rotate(60deg);
+            }
+            100% {
+                background-color: aqua;
+                transform: rotateX(50deg);
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>

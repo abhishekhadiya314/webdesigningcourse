@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function User(email, password) {
+        this._email = email;
+        this._password = password;
+
+        Object.defineProperty(this, 'email', {
+            get: function () {
+                return this._email.toUpperCase()
+                
+            },
+            set: function (value) {
+                this.email = value
+            }
+        })
+        Object.defineProperty(this, 'password', {
+            get: function () {
+                return this._password.toUpperCase()
+                
+            },
+            set: function (value) {
+                this._password = value
+            }
+        })
+        
+    }
+    const abc = new User("abc@.com", "abc")
+    console.log(abc.email);
+</script>
+</html>

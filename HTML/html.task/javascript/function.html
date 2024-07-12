@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="abc()">show x</button>
+</body>
+<script>
+    // function without perameters
+
+    var x = 5
+    function abc() {
+        document.write(x)
+    }
+    
+
+        // with perameters
+         
+    function abc(a=true) {
+        document.write(a)
+    }
+    abc(5)
+    abc("")
+    abc(true)
+    abc(false)
+</script>
+</html>

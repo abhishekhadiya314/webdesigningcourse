@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function sayMyName() {
+        console.log("A");
+        console.log("B");
+        console.log("H");
+        console.log("I");
+    }
+    // sayMyName()
+
+    //  function 1 
+
+
+    function addTwoNumbers(number1, number2){
+        console.log(number1 + number2 );   
+         }
+         const result = addTwoNumbers(3, 5)
+        //  console.log(result);
+
+         
+        // function 2 
+
+    function addTwoNumbers(number1, number2){
+        
+        let result1 = number1 + number2                
+        return result1                           //  first way 
+        // return number1 + number2                   // second way 
+         }
+      
+         const result1 = addTwoNumbers(5, 5)
+        //  console.log("Result:", result1);
+
+        //  function 3
+
+        function loginUserMessage(username = "abhi"){
+            if(!username ){
+                console.log("please enter a username");
+                return
+            }
+            return `${username} just logged in`
+        }
+
+    //    console.log(loginUserMessage("Abhishek"))
+    //    console.log(loginUserMessage())
+                        
+    function calculateCartPrice(...num1){              // ... rest   
+        return num1
+    }
+    // console.log(calculateCartPrice(200, 400,2000, 500));
+
+    const user = {
+        username: "abhishek",
+        price: 199
+    }
+    // handleObject(user)
+    
+    function handleObject(anyobject){
+        // console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    }
+    handleObject({
+        username: "abhi",
+        price: 499
+    })
+
+    const myNewArray = [200, 400, 600, 800]
+    function returnSecondValue(getArray) {
+        return getArray[3]
+        
+    }
+    console.log(returnSecondValue(myNewArray));
+    // console.log(returnSecondValue([200, 400, 600, 800]));
+
+
+    
+</script>
+</html>

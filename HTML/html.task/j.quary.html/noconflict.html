@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, laborum porro. Nam incidunt neque veritatis eos, vero quae rem similique velit quas eligendi consequatur numquam autem eveniet accusamus ipsum aperiam repudiandae qui endi similique doloribus at fuga minus dolorem, expedita deleniti assumenda aliquid temporibus voluptates possimus voluptas eveniet maiores sapiente odio! Mollitia aliquid libero tempore voluptatibus consectetur architecto, repellat ipsa quas minima nobis voluptatem repudiandae at velit id omnis impedit ad. At, non minus? Quo aliquid dicta consequuntur veniam at molestias, saepe deserunt nulla esse adipisci quo nesciunt ad cumque eos eveniet voluptas laudantium eligendi at. Incidunt dolorum minus neque in laboriosam id ipsum accusantium. Voluptatibus atque quia accusamus, veniam, architecto dicta assumenda aspernatur laudantium asperiores quae ipsum est minima sapiente ea hic quasi. Natus omnis maiores exercitationem minus, quas ab eum reiciendis non numquam. Soluta explicabo illo fuga sapiente sunt quisquam officiis nostrum dignissimos nam corrupti laborum, optio dolore ratione corporis minus harum ut delectus porro, vel tenetur? Quia, excepturi rem pariatur temporibus harum neque odit voluptatum minus animi fugiat dolor provident deleniti quam suscipit aperiam id assumenda incidunt quisquam quaerat nihil qui doptio cupiditate. Mollitia, reprehenderit nostrum.</p>
+    <button>hide</button>
+</body>
+<script>
+    var abc = $.noConflict()
+    // $.noConflict ()  second method
+    abc(document).ready(function () {
+        abc("button").click(function () {
+            abc("p").hide(3000)
+            
+        })
+        
+    })
+</script>
+</html>

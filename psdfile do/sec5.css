@@ -1,0 +1,47 @@
+.section-five{
+    height: autco;
+    width: auto;
+    background-color: #fcc302;
+    padding: 90px;
+}
+.section-five > h1{
+    font-size: 75px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Poppins";
+text-align: center;
+}
+.section-five > p{
+    font-size: 33px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Poppins";
+text-align: center;
+}
+.sec-five-image{
+ display: flex;   
+column-gap: 40px;
+margin-top:40px ;
+margin-left: 20px;
+}
+.five-image >h4{
+    font-size: 42px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Poppins";
+text-align: center;
+margin-top: 20px;
+}
+.five-image >button{
+    font-size: 25px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Poppins";
+text-align: center;
+width: 199px;
+height: 60px;
+border-radius: 30px;
+background-color: #00bec9;
+margin-left: 60px;
+margin-top: 20px;
+}

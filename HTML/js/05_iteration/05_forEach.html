@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+                    //++++++++++ For Each +++++++++++//
+
+            const coding = ["js", "ruby", "python", "cpp"]        
+
+            coding.forEach( function (val) {                 // type1 //
+                // console.log(val);
+            })
+
+            coding.forEach( (item) => {                       // type2 //
+                // console.log(item);
+            })
+
+            function printMe(item) {                          // type3 //
+                // console.log(item);
+            }
+            // coding.forEach(printMe)
+
+
+            coding.forEach( (item, index, arr) => {             // type4 //
+                // console.log(item, index, arr);
+            })
+
+            const mycoding = [
+                {
+                    languageName: "javascript",
+                    languageFileName: "js"
+                },
+                {
+                    languageName: "java",
+                    languageFileName: "java"
+                },
+                {
+                    languageName: "python",
+                    languageFileName: "py"
+                },
+            ]
+
+            mycoding.forEach( (item) => {
+                // console.log(item. languageName);
+            })
+
+</script>
+</html>

@@ -1,0 +1,405 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins";
+    text-transform: capitalize;
+}
+.navbar{
+    height: auto;
+    width: auto;
+    background-color: #daac00;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+@media only screen and (max-width:600px){
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+ul{
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    margin-left: 40px;
+    gap: 40px;
+    flex-direction: row;
+    font-size: 20px;
+    position: relative;
+    font-family: "Poppins";
+}
+li a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.search{
+    height: 50px;
+    display: flex;
+    border: 3px solid transparent;
+}
+.search > input{
+    height: 60px;
+    width: 300px;
+    border: none;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    background-position-x: center;
+    background-position-y:center ;
+    background-repeat: no-repeat;
+}
+.search-icon{
+    width: 60px;
+    height: 60px;
+    background-color: #00bec9;
+    font-size: 1.2rem;
+    display: flex;
+    background-image: url(Search\ Button.png);
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-position-x: center;
+    background-position-y:center ;
+    background-repeat: no-repeat;
+}
+.border:hover{
+    border: 1.5px solid #ffffff;
+}
+
+/* main hero section  */
+
+.section-one{
+    height:auto;
+    width: auto;
+    background-color: #fcc302;
+    color: #ffffff;
+    background-image: url(dog.image.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: center;
+    padding: 90px;
+}
+@media only screen and (max-width:600px){
+    .section-one{
+        /* padding: 9px; */
+        /* padding-left: 300px; */
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.section-one-1,.section-two-1{
+    width: 50%;
+    margin-left: 92px;
+}
+.pera1{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: initial;
+}
+.pera2{
+    font-size: 25px;
+    margin-top: 90px;
+    text-transform: initial;
+}
+.contact {
+    margin-top: 90px;
+    margin-left: 20px;
+    width: 182px;
+    height: 69px;
+    border-radius: 7px;
+    background-color: #00bec9;
+    border: 0px;
+    color: #ffffff;
+    font-size: 29px;
+}
+.ourservice{
+    margin-top: 90px;
+    margin-left: 20px;
+    width: 182px;
+    height: 69px;
+    border-radius: 7px;
+    background-color: #fcc302;
+    color: #ffffff;
+    border: 2px solid white;
+    font-size: 29px;
+}
+.contact:hover, .ourservice:hover, .section-four-two > button:hover, .sec-five-img-detail> button:hover {
+    background-color: black;
+    color: red;
+}
+.section-two{
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    display: flex;
+    color: black;
+    padding: 90px;
+}
+@media only screen and (max-width:600px){
+    .section-two{
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+        
+    }
+    
+   
+}
+.pera3{
+    font-size: 45px;
+    color: #313243;
+    font-weight: 600;
+    text-transform: initial;
+    margin-right: 50px;
+}
+.pera4{
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #313243;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+    .section-two-2{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.one{
+    width: 252px;
+    height: 206px;
+    background-color: #fcc302;
+    position: absolute;
+    bottom: 90px;
+    right: 360px;
+}
+.two{
+    width: 506px;
+    height: 480px;
+    background-color: #daac00;
+    z-index: 1;
+}
+.two1{
+    opacity: .568;
+    width: 506px;
+    height: 480px;
+    background-color: rgba(red, green, blue, alpha) (218,172,0,0.5686274509803921);
+    position: absolute;
+    background-image: url(Place\ Your\ Image\ Here\ \(1\).png);
+}
+
+.im{
+    width: 506px;
+    height: 480px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.im > span{
+    width: 84px;
+    height: 84px;
+    border-radius: 42px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 29px;
+    background-repeat: no-repeat;
+    background-position-x:center ;
+    background-position-y: center;
+}
+.ourservice1{
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 182px;
+    height: 69px;
+    border-radius: 7px;
+    background-color: #fcc302;
+    color: #ffffff;
+    border: 2px solid white;
+    font-size: 29px;
+}
+.section-three{
+    height: auto;
+    width: auto;
+    background-color: #fcc302;
+    padding: 90px;
+}
+
+.section-three > h1{
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.section-three > p{
+    font-size: 33px;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 40px;
+    text-transform: initial;
+}
+
+.sec-three-img{
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    column-gap: 40px;
+}
+@media only screen and (max-width:600px){
+    .sec-three-img{
+        flex-direction: column;
+        gap: 20px;
+        /* padding: 50px; */
+        /* display: block; */
+
+    }
+}
+.sec-three-img > div > h4{
+   font-size: 38px;
+   font-weight: 600px;
+   text-align: center;
+   font-weight: bold;
+   color: #ffffff;
+   margin-top: 20px;
+}
+.sec-three-img > div > p{
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400px;
+    margin-top: 20px;
+}
+
+.section-five{
+    height: auto;
+    width: auto;
+    background-color: #fcc302;
+    padding: 90px;
+}
+.section-five > h1{
+    font-size: 75px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Poppins";
+text-align: center;
+}
+.section-five > p{
+    font-size: 33px;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 40px;
+    text-transform: initial;
+}
+.sec-five-image{
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    column-gap: 40px;
+}
+@media only screen and (max-width:600px){
+    .sec-five-image{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.five-image > h4{
+    font-size: 42px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Poppins";
+text-align: center;
+margin-top: 20px;
+
+}
+.five-image > button{
+ font-size: 25px;   
+    width: 199px;
+height: 60px;
+border-radius: 30px;
+color: #ffffff;
+border: 0px;
+margin-top: 20px;
+margin-left: 60px;
+background-color: #00bec9;
+}
+ .section-six{
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    padding: 90px;
+}
+@media only screen and (max-width:600px){
+    .section-six-image{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.section-six > h1{
+    font-size: 75px;
+color: #313243;
+font-weight: 700;
+font-family: "Poppins";
+text-align: center;
+text-transform: initial;
+}
+.section-six > p{
+    font-size: 33px;
+color: #313243;
+font-weight: 400;
+font-family: "Poppins";
+text-align: center;
+margin-top: 20px;
+text-transform: initial;
+}
+.section-six-image{
+    margin-top: 50px;
+    margin-left: -20px;
+    display: flex;
+    column-gap: 40px;   
+}
+.six-image > h4{
+    font-size: 29px;
+    color: #313243;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center; 
+    margin-top: 30px;  
+}
+.six-image > p{
+    font-size: 25px;
+color: #313243;
+font-weight: 400;
+font-family: "Poppins";
+text-align: center;
+margin-top: 10px;
+}
+.six-image > span {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 315.5px;
+    display: flex;
+    justify-content: center;
+    font-size: 29px;
+    column-gap: 20px;
+} 
+.fa-brands{
+    color: blue;
+}
+

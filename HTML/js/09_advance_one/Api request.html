@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-color: black;">
+    0 Unsent Client has been Created. open() not called yet.
+    1 Opened open() has been called.
+    2 Headers Received send() has been called, and headers and status are available.
+    3 Loading Dowanloading; responseText hold partial data.
+    4 Done the operation is complete.
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/abhishekhadiya314'
+   const xhr = new  XMLHttpRequest();
+   xhr.open('GET',  requestUrl)
+xhr.onreadystatechange = function () {
+    console.log(xhr.readyState);
+    if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText)
+        console.log(typeof data);
+         console.log(data.followers);
+    }
+}
+   xhr.send();   
+</script>
+</html>

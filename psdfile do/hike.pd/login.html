@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>LOGO</p>
+        </div>  
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="Home" class="link active">Home</a>
+                    </li>
+                    <li><a href="Service" class="link">Service</a></li>
+                    <li><a href="Blog" class="link">Blog</a></li>
+                    <li><a href="About" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginbtn" onclick="login ()">sign in</button>
+                <button class="btn" id="registerbtn" onclick="login()">sign up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="mymenufunction()"></i>
+            </div>
+             
+    </nav>
+    <!-- login form  -->
+    <div class="form-box">
+        <div class="login-container" id="login">
+          <div class="top">
+            <span>Don't Have an Account?<a href="#" onclick="register()">sign up</a></span>
+            <header>Login</header>
+          </div>  
+          <div class="input-box">
+            <input type="text" class="input-field" placeholder="Username or Email">
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" placeholder="password">
+            <i class="bx bx-lock-alt"></i>
+          </div>
+          <div class="input-box">
+            <input type="submit" class="submit" value="sign in">
+          </div>
+          <div class="two-col">
+            <div class="one">
+                <input type="checkbox" id="login-check">
+                <label for="login-check">Remember Me</label>
+            </div>
+            <div class="two">
+                <label ><a href="#">Forgot password?</a></label>
+            </div>
+          </div>
+          <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>sign up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box"> </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>    
+</body>
+</html>

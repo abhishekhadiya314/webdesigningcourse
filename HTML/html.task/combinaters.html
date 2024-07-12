@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*<--- descendant selectors --->*/
+        div p,h1,section{
+            background-color: brown;
+        }
+        /*<--- child selectors ---> */
+        h1 > span{
+            background-color: aqua;
+        }
+         /* adajacent siblings selector */
+        div + p{
+            background-color: red;  
+        }
+        /* general selector */
+        div ~ p{
+            /* backgroun d-color: yellow;  */
+        }
+    </style>
+</head>
+<body>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <div>
+        <h1>hello</h1>
+        <p>abc1</p>
+        <p>abc1</p>
+        <p>abc1</p>
+        <p>abc1</p>
+        <p>abc1</p>
+        <section>
+            <p>abc_section</p>
+        </section>
+    </div>
+    
+    <p>hello222</p>
+    <p>hello</p>
+    <p>hello</p>
+    <h1>
+        hel<span>l</span>o
+    </h1>
+</body>
+</html>

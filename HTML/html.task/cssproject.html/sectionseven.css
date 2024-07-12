@@ -1,0 +1,53 @@
+.section-seven{
+    height: auto;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seven-one{
+    opacity: 0.839;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 195.2, 2, 0.8392156862745098);
+    position: relative;
+    position: absolute;
+}
+.seven-one-main{
+    position: absolute;
+    height: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width:600px){
+    .seven-one-main{
+        width: 400px;
+    }
+}
+.seven-two{
+    height: 80%;
+    width: 24%;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.seven-detail > h2{
+    font-size: 42px;
+color: #ffffff;
+font-weight: 500;
+font-family: "Poppins";
+text-align: center;
+}
+.seven-detail >p{
+    font-size: 38px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Poppins";
+text-align: center;
+}

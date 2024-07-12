@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333333;
+    padding: 30px;
+    gap: 120px;
+}
+.navbar >ul{
+display: flex;
+/* gap: -60px; */
+align-items: center;
+position: relative;
+}
+.navbar ul>li{
+    list-style: none;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.navbar ul li >a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-right: 50px;
+}
+.section-one{
+    background-color: #333333;
+    height: auto;
+    width: auto;
+    display: flex;
+    position: relative;
+}
+.sec-img1{
+    margin-top: -87.8px;
+}
+.sec-img2{
+    margin-top: -186px;
+    margin-left: -180px;
+}
+.sec-01{
+    height: auto;
+    width: 35%;
+    position: absolute;
+    left: 47%;
+    top: 15%;
+}
+.sec-01 >h1{
+    font-size: 100px;
+color: #ffc200;
+font-weight: 400;
+font-family: "Grand Hotel";
+}
+.sec-01 >p{
+width: 120%;    
+margin-top: 20px;
+font-size: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+}
+.now{
+    margin-top: 30px;
+    width: 245px;
+height: 50px;
+border-radius: 4px;
+background-color: #ffc200;
+}
+.sec-two{
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    position: relative;
+}
+.sec-02>h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 75px;
+color: #333333;
+font-weight: 400;
+font-family: "Grand Hotel";
+text-align: center;
+}
+.sec-02>p{
+    text-align: center;
+    margin-top: 30px;
+    /* width: 2070px; */
+/* height: 210px; */
+font-size: 25px;
+color: #333333;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+}
+.sec-two-03{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+.sec-03{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 100px;
+}
+.sec-03>div{
+    height: 230px;
+    width: 230px;
+    background-color: #333333;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-03>h1{
+    font-size: 42px;
+color: #333333;
+font-weight: 400;
+font-family: "Grand Hotel";
+text-align: center;
+}
+.sec-03>p{
+    /* width: 719px; */
+/* height: 119px; */
+font-size: 17px;
+color: #333333;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+}
+

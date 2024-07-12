@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 200px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .one{
+          height:100px;  
+          width: 100px;
+          border-top: 5px solid transparent;
+          border-right: 7px dotted black;
+          border-bottom: 9px dotted black;
+          border-left: 11px dotted black;
+          border-radius: 50%;
+          filter: drop-shadow(2px 2px 2px blue);
+          animation-name: abc;
+          animation-duration: 0.7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+        @keyframes abc{
+            from{
+                transform: rotate(0deg);
+                
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

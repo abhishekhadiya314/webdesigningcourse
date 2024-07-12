@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+                const coding = ["js", "ruby", "python", "cpp"]        
+
+           const values = coding.forEach( (item) => {
+                    // console.log(item);
+                    return item
+                })
+                // console.log(values);
+
+        const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    //    const newNums = myNums.filter( (num) => {            //type1 //
+        //   return num > 4
+    //    })
+
+       const newNums = []
+       myNums.forEach( (num) => {                             // type2 //
+        if (num > 4) {
+            newNums.push(num)
+            
+        }
+       })
+
+    //    console.log(newNums);
+
+
+                                // book Example 
+
+     const books = [
+        {
+            title: 'Book One', genre: 'Fiction', publih: 1981,
+            edition: 2004
+        },
+        {
+            title: 'Book Two', genre: 'Non-Fiction', publih: 1992,
+            edition: 2008
+        },
+        {
+            title: 'Book Three', genre: 'History', publih: 1999,
+            edition: 2007
+        },
+        {
+            title: 'Book Four', genre: 'Non-Fiction', publih: 1989,
+            edition: 2010
+        },
+        {
+            title: 'Book Five', genre: 'Science', publih: 2009,
+            edition: 2014
+        },
+        {
+            title: 'Book Six', genre: 'Fiction', publih: 1987,
+            edition: 2010
+        },
+        {
+            title: 'Book Seven', genre: 'History', publih: 1986,
+            edition: 1996
+        },
+        {
+            title: 'Book Eight', genre: 'Science', publih: 2011,
+            edition: 2016
+        },
+        {
+            title: 'Book Nine', genre: 'Non-Fiction', publih: 1981,
+            edition: 1989
+        },
+];
+  let userBooks = books.filter( (bk) => bk.genre === 'Non-Fiction')
+
+               userBooks = books.filter( (bk) => { 
+              return bk.publih  >= 1995 && bk.genre === 'Science'
+})
+
+// console.log(userBooks);
+
+    
+</script>
+</html>

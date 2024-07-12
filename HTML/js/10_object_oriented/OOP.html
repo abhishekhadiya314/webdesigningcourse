@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const user = {
+        username: "abhishek",
+        loginCount: 8,
+        signedIn: true,
+
+        getUserDetails: function () {
+            console.log("Got user details from database");
+            console.log(this);
+        }
+    }
+    console.log(user.username);
+    console.log(user.getUserDetails());
+
+
+function User(username, loginCount, isLoggedIn){
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isLoggedIn = isLoggedIn
+
+    this.greeting = function () {
+        console.log(`welcome ${this.username}`);
+        
+    }
+
+    return this
+}
+const userOne = new User("abhishek", 12, true)
+const userTwo = new User("hadiya", 11, false)
+console.log(userOne);
+console.log(userTwo);
+
+
+// console.log(userOne.constructor);
+</script>
+</html>

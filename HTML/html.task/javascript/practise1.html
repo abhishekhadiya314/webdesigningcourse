@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">abhishek</h1>
+    <button onmouseenter="change()">click me</button>
+    <button onmouseleave="reset()">reset</button>
+</body>
+<script>
+     function change() {
+        document.getElementById("one").innerHTML ="@bhi"
+        document.getElementById("one").style.color ="aqua"
+        document.getElementById("one").style.backgroundColor="black"
+     }
+     function reset() {
+        document.getElementById("one").innerHTML ="abhishek"
+        document.getElementById("one").style.color =""
+        document.getElementById("one").style.backgroundColor=""
+     }
+</script>
+</html>

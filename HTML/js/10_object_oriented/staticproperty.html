@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class User {
+        constructor(username){
+            this.username = username
+        }
+        logMe(){
+            console.log(`username: ${this.username}`);
+        }
+        createId(){
+    //    static createId(){                             //with static error message                              
+            return `123`
+        }
+    }
+    const abhi = new User("abhi")
+    console.log(abhi.createId());      
+
+    class  Teacher extends User {
+        constructor(username, email){
+            super(username)
+            this.email = email
+        }
+    }
+    const iphone = new Teacher("iphone", "iphone@email.com")
+    // console.log(iphone.createId);                         //not excess with static
+    // iphone.logMe();
+</script>
+</html>

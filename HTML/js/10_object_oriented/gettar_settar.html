@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class User {
+        constructor (email, password){
+            this.email = email;
+            this.password = password
+
+        }
+        get password(){
+            return this._password.toUpperCase()
+
+        }
+        set password(value){
+            this._password = value.toUpperCase()
+        }
+    }
+    const abhi = new User ("abhi@gmail.com", "1234")
+    console.log(abhi.password);
+</script>
+</html>

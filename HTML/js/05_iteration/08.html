@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const  myNums = [1,2,3] 
+
+    // const myTotal = myNums.reduce( function (acc, currval) {                  //type1 ///
+        // console.log(`acc: ${acc} and currval: ${currval}`);
+        // return acc + currval
+    // }, 0)
+
+    const myTotal = myNums.reduce( (acc, curr) => acc+curr,0)             //type2//
+        // console.log(myTotal);
+
+    const shoppingCart = [
+        {
+            itemName: "js course",
+            price: 2999
+        },
+        {
+            itemName: "python course",
+            price: 1999
+        },
+        {
+            itemName: "mobile dev course",
+            price: 5999
+        },
+        {
+            itemName: "data science course",
+            price: 12999
+        }
+    ]
+
+    const priceToPay = shoppingCart.reduce( (acc, item) => acc + item.price, 0)
+    // console.log(priceToPay);
+
+</script>
+</html>
